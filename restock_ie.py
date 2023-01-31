@@ -10,16 +10,16 @@ def Handler(event=None, context=None):
     client = Client(account_sid, auth_token)
 
     # BeautifulSoup setup
-    r = requests.get('https://www.svsound.com/collections/outlet-specials')
+    r = requests.get('httphttps://ie.webuy.com/')
     content = r.content
     soup = BeautifulSoup(content, 'html.parser')
 
     # Search parameters and URL for SMS
-    svs_url = 'https://svsound.com'
-    search = 'PB-1000'
+    svs_url = 'https://ie.webuy.com/'
+    search = 'Monitor'
     outlet = 'Outlet'
 
-    # Get all product cards from SVS outlet site and search using above parameters
+    # Get all product cards from outlet site and search using above parameters
     products = soup.find_all('div', class_='productCard_title')
     for item in products:
         current_item = item.h3.string
