@@ -10,8 +10,8 @@ AWS EventBridge
 
 Steps to run the program:
 
-Get a Twilio account and an AWS account
-Get your Twilio Account SID and Auth Token
+1.Get a Twilio account and an AWS account
+2. Get your Twilio Account SID and Auth Token
 Modify the starter code in Python:
 Include your Account SID and Auth Token
 Replace from_ and to variables with your Twilio number and recipient number
